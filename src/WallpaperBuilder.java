@@ -48,10 +48,10 @@ int heightBuffer = 200;
 	 
 	 
 	 System.out.println("draw!");
-	fill(255);
-	rect(50,50,100,100);
-	
-	translate(200,200);
+//	fill(255);
+//	rect(50,50,100,100);
+//	
+//	translate(200,200);
 	textAlign(CENTER);
 	text(messageGenerator.getRandomMessage(), 50, 50);
 	backgroundBuilder.drawBackground(this);
