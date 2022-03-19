@@ -1,0 +1,11 @@
+BackgroundTypes:
+* solid with doodle
+* spiral boi?
+* Penrose Tile
+* noise 2d
+* distance 2d
+* stripes
+
+Doodles:
+* targets (Functions)
+* recursive tree

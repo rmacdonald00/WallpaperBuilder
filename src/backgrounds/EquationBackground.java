@@ -1,6 +1,5 @@
 package backgrounds;
 
-import java.util.Random;
 import java.util.function.Function;
 
 import processing.core.PApplet;

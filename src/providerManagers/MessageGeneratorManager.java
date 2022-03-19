@@ -8,11 +8,7 @@ public class MessageGeneratorManager extends ProviderManager<MessageGenerator> {
 	private String affirmationsFilepath = "./src/config/messageData/AffirmationMessageOptions.json";
 	
 	private MessageGenerator messageGenerator;
-	
-	private enum MessageType {
-		AFFIRMATIONS
-	}
-	
+
 	public MessageGeneratorManager() {
 		String type = super.getConfigType("messages");
 		setGeneratorByType(type);
