@@ -9,5 +9,6 @@ public class Main  extends PApplet {
 	    } else {
 	      PApplet.main(appletArgs);
 	    }
+	    System.out.println("end of main");
 	  }
 }

@@ -13,7 +13,7 @@ public class MessageOptions implements MessageGenerator {
 	private List<String> allMessages = null;
 	
 	public MessageOptions() {
-		this.phraseBuildingBlocks = getPhraseBuildingBlocksFromFile("./src/config/messageData/AffirmationMessageOptions.json");
+		this.phraseBuildingBlocks = new ArrayList<List<String>>();
 	}
 	
 	public MessageOptions (String messageDataFilepath) {
