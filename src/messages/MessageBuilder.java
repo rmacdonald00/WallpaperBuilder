@@ -2,7 +2,7 @@ package messages;
 
 import java.util.List;
 
-public interface MessageGenerator {
+public interface MessageBuilder {
 	public abstract String getRandomMessage();
 	public abstract List<String> getAllMessages();
 }

@@ -3,6 +3,7 @@ package backgrounds;
 import java.util.Random;
 
 import processing.core.PApplet;
+import processing.core.PConstants;
 
 public class StripedBackground implements BackgroundBuilder {
 	
@@ -26,7 +27,7 @@ public class StripedBackground implements BackgroundBuilder {
 		int weight = random.nextInt(getSpaceBetweenLines(sketch) / 2);
 		System.out.println("stroke weight = " + weight);
 		sketch.strokeWeight(weight);
-		sketch.strokeCap(sketch.PROJECT);
+		sketch.strokeCap(PConstants.PROJECT);
 	}
 	
 	private int getSpaceBetweenLines(PApplet sketch) {
@@ -36,6 +37,7 @@ public class StripedBackground implements BackgroundBuilder {
 		}
 		return spaceBetweenLines;
 	}
+	
 	private float getAngle() {
 		return random.nextInt(180) - 90;
 	}
@@ -43,8 +45,8 @@ public class StripedBackground implements BackgroundBuilder {
 	
 	private void drawLinesWithAngle(PApplet sketch, float angleInDeg) throws Exception {
 		if(angleInDeg > 90 || angleInDeg < -90) throw new Exception("Bad angle in shape background");
-		float angleInRads = sketch.radians(angleInDeg);
-		float slope = sketch.tan(angleInRads);
+		float angleInRads = PApplet.radians(angleInDeg);
+		float slope = PApplet.tan(angleInRads);
 		
 		
 		if(angleInDeg < -45 || angleInDeg > 45) {

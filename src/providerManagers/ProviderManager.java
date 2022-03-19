@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public abstract class ProviderManager<T> {
 	
-	private static String configFilepath = "./src/config/properties/config.properties";
+	private static String configFilepath = "./config/config.properties";
 	private Properties properties;
 	
 	private void loadProperties(){

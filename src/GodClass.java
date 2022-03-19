@@ -1,13 +1,16 @@
 import backgrounds.BackgroundBuilder;
-import messages.MessageGenerator;
+import messages.MessageBuilder;
 import providerManagers.BackgroundBuilderManager;
-import providerManagers.MessageGeneratorManager;
+import providerManagers.MessageBuilderManager;
 import providerManagers.ProviderManager;
+import providerManagers.TextBuilderManager;
+import safeTextZones.TextBuilder;
 
 public class GodClass {
 	
 	private static ProviderManager<BackgroundBuilder> backgroundBuilderManager;
-	private static ProviderManager<MessageGenerator> messageGeneratorManager;
+	private static ProviderManager<MessageBuilder> messageGeneratorManager;
+	private static ProviderManager<TextBuilder> textBuilderManager;
 	
 	
 	public static ProviderManager<BackgroundBuilder> getBackgroundBuilderManager() {
@@ -17,11 +20,18 @@ public class GodClass {
 		return backgroundBuilderManager;
 	}
 	
-	public static ProviderManager<MessageGenerator> getMessageGeneratorManager() {
+	public static ProviderManager<MessageBuilder> getMessageBuilderManager() {
 		if(messageGeneratorManager == null) {
-			messageGeneratorManager = new MessageGeneratorManager();
+			messageGeneratorManager = new MessageBuilderManager();
 		}
 		return messageGeneratorManager;
+	}
+	
+	public static ProviderManager<TextBuilder> getTextBuilderManager() {
+		if(textBuilderManager == null) {
+			textBuilderManager = new TextBuilderManager();
+		}
+		return textBuilderManager;
 	}
 
 }

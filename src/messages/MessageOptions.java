@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import org.json.simple.JSONValue;
 
-public class MessageOptions implements MessageGenerator {
+public class MessageOptions implements MessageBuilder {
 	private List<List<String>> phraseBuildingBlocks;
 	private List<String> allMessages = null;
 	

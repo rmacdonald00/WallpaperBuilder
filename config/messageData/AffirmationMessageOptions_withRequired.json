@@ -1,0 +1,30 @@
+[
+  {
+    "required": "true",
+    "options": [
+      "I have affirmations!",
+      "affirmation time!",
+      "happy affirmation time",
+      "affirmations",
+      "start today with affirmations!"
+    ]
+  },
+  {
+    "required": "false",
+    "options": [
+      "let's get it",
+      "woohoo!",
+      "party time",
+      "make it good"
+    ]
+  },
+  {
+    "required": "false",
+    "options": [
+      ":)",
+      ":p",
+      ":D",
+      "B-)"
+    ]
+  }
+]
